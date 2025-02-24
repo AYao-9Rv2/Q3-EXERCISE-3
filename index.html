@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+	<title>Q3-EXERCISE 3</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1 id="sample"><b>⋆𐙚₊ greeting app⊹♡</b></h1><hr>
+
+		<form>
+			<label for="fname"><b>enter name:</b></label>
+			<input type="text" id="fname" class="form-control">
+			<br>
+			<h5 id="guest-name">.  ⋮ welcome guest .ᐟ  ֹ ₊</h5>
+			<br>
+			<button type="button" class="btn btn-outline-secondary" onclick="greet()">greet</button>
+			<button type="button" class="btn btn-outline-secondary" onclick="window.location.reload()">refresh</button>
+		</form>
+
+		<br>
+
+		<script type="text/javascript">
+			function greet(){
+				var name = document.getElementById('fname').value;
+				document.getElementById('guest-name').innerHTML = 'welcome, ' + name + ' ૮ ˶ᵔ ᵕ ᵔ˶ ა';
+			}
+
+		</script>
+		<footer>
+			<hr><p><a style="text-decoration: none; color:#85D4FF;" href="https://github.com/AYao-9R/Q3-EXERCISE-3"> &#169; AY 2025 | ICT 9 Ruby | exercise 3: functions | Yao, Amanda Praise Kho</a></p>
+		</footer>
+	</div>
+</body>
+</html>
+
